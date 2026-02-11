@@ -1,7 +1,3 @@
-# Combined Loading Chart Exercise
-
-An interactive web application for calculating and visualizing allowable tension curves for pipes under combined torsion and tension loading.
-
 ## Installation
 
 ```bash
@@ -101,22 +97,9 @@ User Input
 [renderChart()] → Dual plot visualization
 ```
 
-### Key Features
-- **Dual Plots:** Simultaneous visualization of tension curves with and without safety factor
-- **Multiple Units:** kftlb/kNm for torque, klb/mT for tension
-- **Pipe Database:** JSON specs with yield strength and wall thickness options
-- **Safety Factor:** Configurable 0-90% in 5% increments
-- **Responsive Chart:** Real-time updates on input changes
-
 ## Technology Stack
 - **Frontend:** TypeScript, HTML5, CSS3
 - **Charting:** Chart.js
 - **Build Tool:** Vite
 - **Testing:** Vitest
 - **Type Safety:** TypeScript strict mode
-
-## Development Notes
-- All calculations in `calc/` are pure functions (no side effects)
-- Chart is reused and updated rather than recreated
-- Binary search or memoization could optimize large-scale calculations
-- Test coverage focuses on calculation accuracy and edge cases
