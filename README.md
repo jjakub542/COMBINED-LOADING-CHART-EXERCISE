@@ -1,3 +1,6 @@
+## Preview
+Download ```dist/``` and launch ```index.html``` to preview application.
+
 ## Installation
 
 ```bash
