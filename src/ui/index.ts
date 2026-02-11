@@ -9,11 +9,7 @@ import {
 } from './dom';
 import { setupEventHandlers } from './handlers';
 
-/**
- * Initialize the entire UI
- */
 export const initializeUI = () => {
-  // Initialize dropdowns
   initializePipeDropdown();
   initializeSafetyFactorDropdown();
 
@@ -33,12 +29,8 @@ export const initializeUI = () => {
   el.torqueUnit.value = state.torqueUnit;
   el.tensionUnit.value = state.tensionUnit;
 
-  // Setup event listeners
   setupEventHandlers();
-
-  // Mark initial state
   markNotUpToDate();
 };
 
-// Re-export DOM functions for direct access if needed
 export { el, updateWeightDropdown, markNotUpToDate, markUpToDate } from './dom';
