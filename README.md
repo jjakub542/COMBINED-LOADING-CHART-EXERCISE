@@ -27,23 +27,10 @@ Outputs optimized files to `dist/`
 npm run preview
 ```
 
-## Testing
-
-```bash
-# Run tests once
-npm test -- --run
-
-# Watch mode
-npm test
-
-# UI dashboard
-npm test:ui
-
-# Coverage report
-npm test:coverage
+**Run Tests:**
 ```
-
-**Test Suite:** 26 tests across 2 files covering all calculation functions
+npm test
+```
 
 ## App Architecture
 
