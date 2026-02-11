@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  padding: 2rem;
+  color: #333;
+  line-height: 1.5;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+label[for] {
+  display: inline-block;
+  font-weight: 500;
+  min-width: 100px;
+}
+
+label:not([for]) {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+#calc {
+  padding: 0.6rem 1.5rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#calc:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+#calc:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.status-container {
+  margin: 1rem 0;
+}
+
+#status {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.status-notready {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+.status-ready {
+  color: #15803d;
+  background: #dcfce7;
+}
+
+#chart {
+  width: 100%;
+  margin: 2rem 0;
+  min-height: 400px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+}

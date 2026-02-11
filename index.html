@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Combined Loading Chart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main>
+    <h1>Combined Loading Chart</h1>
+    
+    <section class="inputs-section">
+      <h2>Inputs</h2>
+      
+      <div class="form-group">
+        <label for="pipe">Pipe Size:</label>
+        <select id="pipe"></select>
+      </div>
+
+      <div class="form-group">
+        <label for="weight">Nominal Weight:</label>
+        <select id="weight"></select>
+        <label id="weight-unit">lb/ft</label>
+      </div>
+
+      <div class="form-group">
+        <label for="sf">Safety Factor:</label>
+        <select id="sf"></select>
+        <label id="sf-unit">%</label>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="torque-unit">Torque Unit:</label>
+          <select id="torque-unit">
+            <option value="kftlb">kftlb</option>
+            <option value="kNm">kNm</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="tension-unit">Tension Unit:</label>
+          <select id="tension-unit">
+            <option value="klb">klb</option>
+            <option value="mT">mT</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="calc">Calculate</button>
+
+      <div class="status-container">
+        <span id="status" aria-live="polite">Calculations NOT up to date</span>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <canvas id="chart"></canvas>
+    </section>
+  </main>
+
+  <script type="module" src="/src/index.ts"></script>
+</body>
+</html>

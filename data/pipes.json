@@ -1,0 +1,33 @@
+{
+  "pipes": {
+    "4\"": {
+      "od": 4,
+      "yieldPsi": 135000,
+      "weights": [
+        {"wall": 0.330, "weight": 14.00},
+        {"wall": 0.380, "weight": 15.70},
+        {"wall": 0.500, "weight": 19.56}
+      ]
+    },
+    "5\"": {
+      "od": 5,
+      "yieldPsi": 135000,
+      "weights": [
+        {"wall": 0.362, "weight": 19.50},
+        {"wall": 0.500, "weight": 25.60},
+        {"wall": 0.750, "weight": 34.01}
+      ]
+    },
+    "5 7/8\"": {
+      "od": 5.875,
+      "yieldPsi": 95000,
+      "weights": [
+        {"wall": 0.361, "weight": 23.40},
+        {"wall": 0.415, "weight": 26.30},
+        {"wall": 0.500, "weight": 28.70},
+        {"wall": 0.625, "weight": 34.21},
+        {"wall": 0.750, "weight": 41.05}
+      ]
+    }
+  }
+}
